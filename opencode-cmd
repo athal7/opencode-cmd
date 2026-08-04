@@ -183,7 +183,7 @@ move_session() {
 # ── Help (intercept before getopts, which would reject the dash forms) ─────────
 
 case "${1:-}" in
-  help|-h|--help) print_usage; exit 0 ;;
+  help|-h|--help) print_usage; exit 1 ;;
 esac
 
 # ── Option parsing ───────────────────────────────────────────────────────────
@@ -442,7 +442,7 @@ case "$CMD" in
   # ── help: print usage (also handled pre-getopts for -h/--help) ────────────
   help|-h|--help)
     print_usage
-    exit 0
+    exit 1
     ;;
 
   *)
