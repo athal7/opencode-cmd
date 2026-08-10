@@ -3,7 +3,8 @@
   "packages": {
     ".": {
       "release-type": "simple",
-      "package-name": "opencode-cmd"
+      "package-name": "opencode-cmd",
+      "include-component-in-tag": false
     }
   }
 }
